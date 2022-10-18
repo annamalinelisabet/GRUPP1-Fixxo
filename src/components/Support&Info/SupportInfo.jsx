@@ -7,7 +7,6 @@ import './SupportInfo.css'
 function SupportInfo() {
   return (
 
-      
       <div className="suppInfo-icons">
 
           {/* <div className='bg-image'>
@@ -39,10 +38,6 @@ function SupportInfo() {
         </div>
 
     </div>
-
-
-
-
 
   )
 }
