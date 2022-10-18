@@ -80,7 +80,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-copyright text-center py-3">© 2021
-          <a href="/" className='text-dark'> FIxxo. All Rights Reserved</a>
+          <Link to="/" className='text-dark'> FIxxo. All Rights Reserved</Link>
         </div>
 
       </footer>
