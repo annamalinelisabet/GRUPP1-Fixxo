@@ -1,0 +1,60 @@
+/* 
+.bg-image {
+    background-color: #fff;
+} */
+
+
+
+.suppInfo-icons {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+.icon-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-1 p {
+    text-align: center;
+}
+
+
+.icon-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-2 p {
+    text-align: center;
+}
+
+
+.icon-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-3 p {
+    text-align: center;
+}
+
+
+.icon-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-4 p {
+    text-align: center;
+}

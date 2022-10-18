@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar'
+import SupportInfo from './components/Support&Info/SupportInfo'
 import Views from './views/Views'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Views />
+      <SupportInfo />
     </div>
   );
 }
