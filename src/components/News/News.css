@@ -1,0 +1,57 @@
+.bg1 {
+  background-color: var(--beige);
+}
+.bg2{
+  background-color: var(--light-grey);
+}
+
+p {
+  color: var(--black);
+}
+h2 {
+  color: var(--black);
+}
+
+.pd {
+  padding: 2rem 1rem;
+}
+
+.m-b {
+  margin-block: 1rem;
+}
+
+.p-element {
+  font-size: .8em;
+}
+
+/* LINNEAS BTN */
+.btn-news {
+  position: relative;
+  background-color: var(--black);
+  color: #FFF;
+  border: none;
+  font-size: .8rem;
+  font-weight: 600;
+  padding: .9em 3.5em;
+}
+.btn-news::before,
+.btn-news::after{
+  position: absolute;
+  content: '';
+  width: 1.2em;
+  height: 1.2em;
+  margin: .5em;
+}
+.btn-news::before{
+  left: 0;
+  top: 0;
+  border-left: 2px solid #FFF;
+  border-top: 2px solid #FFF;
+}
+.btn-news::after{
+  right: 0;
+  bottom: 0;
+  border-right: 2px solid #FFF;
+  border-bottom: 2px solid #FFF;
+}
+/* END OF BTN */
