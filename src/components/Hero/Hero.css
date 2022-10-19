@@ -1,0 +1,66 @@
+/* test btn hakar */
+.btn-hero {
+  position: relative;
+  background-color: #FF7373;
+  color: #FFF;
+  border: none;
+  font-size: .8rem;
+  font-weight: 600;
+  padding: .9em 3.5em;
+}
+.btn-hero::before,
+.btn-hero::after{
+  position: absolute;
+  content: '';
+  width: 1.2em;
+  height: 1.2em;
+  margin: .5em;
+}
+.btn-hero::before{
+  left: 0;
+  top: 0;
+  border-left: 2px solid #FFF;
+  border-top: 2px solid #FFF;
+}
+.btn-hero::after{
+  right: 0;
+  bottom: 0;
+  border-right: 2px solid #FFF;
+  border-bottom: 2px solid #FFF;
+}
+
+.hero-bg {
+    background-color: lightgrey;
+}
+.hero-row {
+    height: 70vh;
+}
+.hero-bg-left {
+    background-image: url('img/Bgleft.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.hero-align-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-header {
+    /* 65pt xtrabold */
+    font-size: 3rem;
+    font-weight: 800;
+}
+.hero-text {
+    /* 20pt regular */
+    font-size: 1rem;
+    font-weight: 400;
+}
+.hero-bg-right {
+  background-image: url('img/Bgright.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /* background-position: right bottom; */
+}
