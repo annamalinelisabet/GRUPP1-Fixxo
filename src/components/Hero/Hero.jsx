@@ -4,7 +4,7 @@ import './Hero.css'
 
 const Hero = () => {
   return (
-    <div className='mt-3 hero-bg hero-row d-flex align-items-center'>
+    <div className='mt-3 pt-5 hero-bg hero-row d-flex align-items-center'>
       
       <div className='col h-100 d-none d-sm-block hero-bg-left'>
       </div>
