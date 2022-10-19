@@ -4,7 +4,7 @@ import Hero from '../../components/Hero/Hero'
 import './HomeView.css'
 import News from '../../components/News/News';
 import Inspiration from '../../components/Inspiration/Inspiration'
-
+import SupportInfo from '../../components/Support&Info/SupportInfo';
 
 const Home = () => {
   return (
@@ -15,7 +15,8 @@ const Home = () => {
         <Inspiration />
       </div>
       <div>
-        <Footer />
+      <SupportInfo />
+      <Footer />
       </div>
     </div>
   )
