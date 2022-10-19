@@ -23,7 +23,6 @@ const Inspiration = () => {
             </div>
         </div>
       </div>
-      {/* flex-md-column flex-md-column-reverse */}
       <div className="col-md-6 gy-2 gy-md-0 gx-2 bg4 ">
         <div className=" h-100 d-flex justify-content-center align-items-center justify-content-around"> 
               <div className="new-arrivals container text-center m-b">

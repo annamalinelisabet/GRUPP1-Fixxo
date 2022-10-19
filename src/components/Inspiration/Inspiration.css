@@ -19,8 +19,6 @@ h2 {
 }
 .e-white {
   color: #FFF;
-  /* width: 190px; */
-  
 }
 
 .pd {
@@ -35,7 +33,6 @@ h2 {
   font-size: .8em;
 }
 
-/* LINNEAS BTN */
 .btn-news {
   position: relative;
   background-color: var(--black);
@@ -95,5 +92,3 @@ h2 {
   border-right: 2px solid #000;
   border-bottom: 2px solid #000;
 }
-
-/* END OF BTN */
