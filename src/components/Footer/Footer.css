@@ -1,0 +1,24 @@
+.bgf {
+  background-color: #F8F8F8;
+}
+
+.fcolor {
+  color: #23262A;
+  font-weight: 700;
+}
+
+.fcolor:hover, .linkf:hover {
+  color: #616365bd;
+}
+
+.linkf {
+  color: #616365;
+}
+
+
+.line {
+  height: 1px;
+  background-color: #616365;
+  opacity: 50%;
+}
+
