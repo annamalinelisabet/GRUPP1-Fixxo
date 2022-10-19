@@ -13,6 +13,10 @@ html, body {
 :root {
   --black: #23262A;
   --orange: #FF7373;
+  --beige: #BEBEBE;
+  --light-grey: #E8E8E8;
+  --brown: #75695C;
+  --grey: #D9D9D9;
 }
 
 a {
