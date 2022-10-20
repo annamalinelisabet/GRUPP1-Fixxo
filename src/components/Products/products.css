@@ -1,0 +1,39 @@
+.product-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.product-card {
+  margin-top: 10px;
+}
+
+.product-wrapper h4 {
+  color: black;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.category-text {
+  color: grey;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.title-text {
+  color: black;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+.price-text {
+  letter-spacing: 2px;
+  font-size: 1rem;
+  margin-top: 1px;
+}
+
+.stars {
+  margin: 2px 0;
+}
