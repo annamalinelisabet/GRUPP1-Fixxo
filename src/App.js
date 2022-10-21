@@ -26,15 +26,3 @@ useEffect(() => {
 }
 
 export default App;
-
-// import Popup from './components/Popup/Popup';
-// import { useState, useEffect } from 'react'
-{/* <Popup trigger={timedPopup} setTrigger={setTimedPopup}></Popup> */}
-
-// const [timedPopup, setTimedPopup] = useState(false);
-
-// useEffect(() => {
-//   setTimeout(() => {
-//     setTimedPopup(true)
-//   }, 3000)
-// }, [])
