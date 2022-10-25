@@ -9,8 +9,8 @@ const ProductsLinkView = () => {
 
     {/* navbar breadcrumbs (gör egen komponent, el hur lägga, 
         den här menyn ska oxå vara på productdetail? Hur strukturerar vi views?)*/}
-        <nav className="navbar navbar-expand-lg navbar-light">
-            <div className="container-fluid">
+        <nav className="navbar navbar-expand-lg navbar-light shadow-none">
+            <div className="">
                 <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
                         <li className="breadcrumb-item">
