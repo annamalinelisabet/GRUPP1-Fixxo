@@ -1,10 +1,25 @@
-import React from 'react'
+import { useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import './Navbar.css'
 
 const Navbar = () => {
+
+  const [navbarScroll, setNavbarScroll] = useState(false)
+
+  const changeBg = () => {
+    if(window.scrollY >= 120) {
+      setNavbarScroll(true)
+    }
+    else {
+      setNavbarScroll(false)
+    }
+  }
+
+  window.addEventListener('scroll', changeBg)
+
   return (
-    <div className='m-Navbar'>
+    <div className={navbarScroll ? 'm-Navbar-scroll m-Navbar' : 'm-Navbar'}>
+
       <Link to ="/" className='m-navbar-logo'>Fixxo.</Link>
       <ul className='m-nav-links'>
         <li><NavLink to="/" end className='m-nav-link'>Home</NavLink></li>

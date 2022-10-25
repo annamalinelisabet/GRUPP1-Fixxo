@@ -1,13 +1,20 @@
 .m-Navbar {
-    padding-block: 1rem;
+    padding-block: .7rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
-    background: white;
+    background: green;
+    z-index: 50;
 }
+
+.m-Navbar-scroll {
+    background: white;
+    opacity: 90%;
+}
+
 
 .m-Navbar .m-navbar-logo {
     color: var(--black);
@@ -23,10 +30,6 @@
     justify-content: space-between;
     align-items: center;    
 }
-
-/* .m-Navbar .m-nav-links {
-    width: 25%;
-} */
 
 .m-Navbar .m-nav-link,
 .m-Navbar .m-profile-link
