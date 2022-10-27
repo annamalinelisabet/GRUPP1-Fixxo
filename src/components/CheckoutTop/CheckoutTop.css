@@ -1,0 +1,14 @@
+.m-CheckoutTop {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--grey);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.218);
+    padding: 1rem;
+}
+
+.m-CheckoutTop h4,
+.m-CheckoutTop p{
+    color: var(--black);
+}
+
+
