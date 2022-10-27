@@ -23,3 +23,7 @@
   height: 110px;
   width: 110px;
 }
+
+.custom-card {
+  cursor: pointer;
+}
