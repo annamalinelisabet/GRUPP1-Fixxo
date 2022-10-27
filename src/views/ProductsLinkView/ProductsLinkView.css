@@ -1,0 +1,40 @@
+.btn-list {
+    position: relative;
+    background-color: transparent;
+    color: #000;
+    border: transparent;
+    font-size: .7rem;
+    padding: .7em 1em;
+    justify-content: space-between;
+}
+.btn-left {
+    border-block: .5px solid #000;
+    border-left: .5px solid #000;
+    padding-right: 6em;
+}
+.btn-right {
+    border-block: .5px solid #000;
+    border-right: .5px solid #000;
+}
+.btn-small {
+    padding-right: 0;
+}
+.mt-views {
+    margin-top: 68px;
+}
+.sublist {
+    margin-left: .8rem;
+    padding: 0;
+    font-size: .8rem;
+}
+.sublist-item {
+    list-style-type: none;
+    padding-block: .5rem;
+}
+.page-item.active .page-link {
+    background-color: red;
+    border: none;
+    box-shadow: none;
+}
+
+
