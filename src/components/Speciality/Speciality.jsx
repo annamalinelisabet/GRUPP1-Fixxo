@@ -1,32 +1,46 @@
 import React from 'react'
 import './Speciality.css'
+import '../../App.css'
+import woman from '../../images/woman.svg'
 
 const Speciality = () => {
   return (
-    <div class="container  bg mt-4">
-      <h6 className='text-center'> Our Speciality </h6>
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-lg-4 col-md-6 d-flex">
-          <div className='bg2 p-2'>
+    <div class="container backgroundCard mt-4">
+
+      <h5 className='text-center mb-4 text-dark'> Our Speciality </h5>
+
+      <div class="row d-flex justify-content-center align-items-center flex-md-column flex-lg-row">
+
+        <div class="col-lg-4 col-md-10 d-flex min-height mb-lg-0 mb-2">
+          <div className='col-6 textBackground p-2 d-flex flex-column justify-content-center ps-3'>
             <p>Track Your Order</p>
-            <p>Get Started</p>
+            <p className='text-decoration-underline cursor-pointer'>Get Started<i class="fas fa-angle-right"></i></p>
           </div>
-          <div className='bg12 p-2'>CARD</div>
-        </div>
-        <div class="col-lg-4 col-md-6 d-flex">
-          <div className='bg2 p-2'>
-            <p>Track Your Order</p>
-            <p>Get Started</p>
+          <div className='col-6 grey p-2 d-flex justify-content-center align-items-center'>
+            <img src={woman} className="imgPic" alt=".." />
           </div>
-          <div className='bg12 p-2'>CARD</div>
         </div>
-        <div class="col-lg-4 col-md-6 d-flex">
-          <div className='bg2 p-2'>
-            <p>Track Your Order</p>
-            <p>Get Started</p>
+
+        <div class="col-lg-4 col-md-10 d-flex min-height mb-lg-0 mb-2">
+          <div className='col-6 textBackground p-2 d-flex flex-column justify-content-center ps-3'>
+            <p>Make a Return</p>
+            <p className='text-decoration-underline'>Get Started <i class="fas fa-angle-right"></i></p>
           </div>
-          <div className='bg12 p-2'>CARD</div>
+          <div className='col-6 grey p-2 d-flex justify-content-center align-items-center'>
+            <img src={woman} className="imgPic" alt=".." />
+          </div>
         </div>
+
+        <div class="col-lg-4 col-md-10 d-flex min-height">
+          <div className='col-6 textBackground p-2 d-flex flex-column justify-content-center ps-3'>
+            <p>Request a Price Adjustment</p>
+            <p className='text-decoration-underline'>Get Started <i class="fas fa-angle-right"></i></p>
+          </div>
+          <div className='col-6 grey p-2 d-flex justify-content-center align-items-center'>
+            <img src={woman} className="imgPic" alt=".." />
+          </div>
+        </div>
+
       </div>
     </div>
 

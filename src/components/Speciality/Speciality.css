@@ -1,10 +1,25 @@
-.bg {
+.backgroundCard {
   background-color: #F5F5F5;
+  padding-block: 1.5rem;
+
 }
-.bg2 {
-  background-color: aqua;
+.textBackground {
+  background-color: #ffffff;
+}
+.grey {
+  background-color: #888888;
+}
+.min-height {
+  min-height: 160px;
 }
 
-.bg12 {
-  background-color: aquamarine;
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgPic {
+  height: 110px;
+  width: 110px;
 }
