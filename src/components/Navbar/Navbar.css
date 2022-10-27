@@ -1,14 +1,21 @@
 .m-Navbar {
-    padding-block: 1rem;
+    padding-block: .7rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
-    background: white;
+    background: transparent;
     z-index: 50;
 }
+
+.m-Navbar-scroll {
+    background: white;
+    z-index: 50;
+    opacity: 90%;
+}
+
 
 .m-Navbar .m-navbar-logo {
     color: var(--black);
@@ -25,10 +32,6 @@
     align-items: center;    
 }
 
-/* .m-Navbar .m-nav-links {
-    width: 25%;
-} */
-
 .m-Navbar .m-nav-link,
 .m-Navbar .m-profile-link
  {
@@ -38,7 +41,7 @@
     padding: 0 1rem;
 }
 
-.m-Navbar .active {
+/* .m-Navbar .active {
     color: var(--orange);
-}
+} */
 
