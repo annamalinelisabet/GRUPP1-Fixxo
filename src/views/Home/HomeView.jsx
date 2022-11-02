@@ -8,11 +8,8 @@ import Inspiration from "../../components/Inspiration/Inspiration";
 import SupportInfo from "../../components/Support&Info/SupportInfo";
 import ProductList from "../../components/Products/ProductList";
 import ProductsView from '../../components/ProductsView/ProductsView';
-<<<<<<< HEAD
 import Speciality from '../../components/Speciality/Speciality'
-=======
 import NavDetails from '../../components/ProductDetails/NavDetails';
->>>>>>> ProductDetails
 
 
 const Home = () => {
