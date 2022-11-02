@@ -21,6 +21,7 @@ useEffect(() => {
       </div>
       <Navbar />
       <Views />
+      
     </div>
   );
 }
