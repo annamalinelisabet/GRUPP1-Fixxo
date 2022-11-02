@@ -1,14 +1,19 @@
 import React from "react";
 import "./products.css";
 
+
 import bg from "./img/bg.svg";
 import stars from "./img/stars.svg";
+
+
 
 // import { Link } from "react-router-dom";
 
 // const ProductCardCentered = ({product}) => {
 const ProductCardCentered = () => {
+  
 
+    
   return (
       <div className="text-center">
 
@@ -22,7 +27,10 @@ const ProductCardCentered = () => {
             <img src={stars} alt="stars" className="stars" />
             <p className="price-text">
               <b>$35.00</b>
+              
             </p>
+            
+           
 
     {/* gör länk till prod.details på hela "kortet" */}
         {/* <Link to={'/products/${product._id}'}>
@@ -42,5 +50,6 @@ const ProductCardCentered = () => {
       </div>
   );
 };
+
 
 export default ProductCardCentered;
