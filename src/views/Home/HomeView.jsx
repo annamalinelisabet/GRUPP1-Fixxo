@@ -8,7 +8,7 @@ import Inspiration from "../../components/Inspiration/Inspiration";
 import SupportInfo from "../../components/Support&Info/SupportInfo";
 import ProductList from "../../components/Products/ProductList";
 import ProductsView from '../../components/ProductsView/ProductsView';
-import Speciality from "../../components/Speciality/Speciality";
+import Speciality from '../../components/Speciality/Speciality'
 
 
 const Home = () => {
