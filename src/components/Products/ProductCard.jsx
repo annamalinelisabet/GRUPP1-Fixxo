@@ -1,11 +1,15 @@
 import React from "react";
 import "./products.css";
 
+
+
+
 import bg from "./img/bg.svg";
 import stars from "./img/stars.svg";
 
 const ProductCard = () => {
   return (
+   
     <div className="col">
       <div className="">
         <div className="row">
@@ -21,10 +25,12 @@ const ProductCard = () => {
             <p className="price-text">
               <b>$35.00</b>
             </p>
+            
           </div>
         </div>
       </div>
     </div>
+    
   );
 };
 
