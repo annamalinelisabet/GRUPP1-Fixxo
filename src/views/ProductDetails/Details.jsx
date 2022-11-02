@@ -1,4 +1,5 @@
 import React from 'react'
+import NavDetails from '../../components/ProductDetails/NavDetails';
 
 
 const Details = () => {
@@ -175,6 +176,7 @@ const Details = () => {
       </div>
   
     </section>
+    <NavDetails />
   
   
   </div>

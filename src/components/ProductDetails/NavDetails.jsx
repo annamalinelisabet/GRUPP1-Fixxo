@@ -8,7 +8,7 @@ import Reviews from './Reviews'
 const NavDetails = () => {
   return (
     <div className="container mb-3">
-      <ul className="nav grey lighten-4 py-4">
+      <ul className="nav lighten-4 py-4">
         <li className="nav-item d-underline">
           <Link className="nav-link d-text" to="/">Description</Link>
         </li>
@@ -21,9 +21,9 @@ const NavDetails = () => {
       </ul>
 
       <div>
-        {/* <Description /> */}
+        <Description />
         {/* <ShoppingReturns /> */}
-        <Reviews />
+        {/* <Reviews /> */}
       </div>
     </div>
   )

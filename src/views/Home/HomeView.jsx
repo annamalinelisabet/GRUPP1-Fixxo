@@ -9,7 +9,7 @@ import SupportInfo from "../../components/Support&Info/SupportInfo";
 import ProductList from "../../components/Products/ProductList";
 import ProductsView from '../../components/ProductsView/ProductsView';
 import Speciality from '../../components/Speciality/Speciality'
-import NavDetails from '../../components/ProductDetails/NavDetails';
+
 
 
 const Home = () => {
@@ -26,7 +26,6 @@ const Home = () => {
         <ProductList />
         <SupportInfo />
         <Footer />
-        <NavDetails />
       </div>
     </div>
   );
