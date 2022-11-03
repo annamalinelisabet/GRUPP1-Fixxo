@@ -1,5 +1,6 @@
 import React from "react";
 import "./products.css";
+import { Link } from 'react-router-dom'
 
 
 import bg from "./img/bg.svg";
@@ -9,8 +10,8 @@ import stars from "./img/stars.svg";
 
 // import { Link } from "react-router-dom";
 
-// const ProductCardCentered = ({product}) => {
-const ProductCardCentered = () => {
+const ProductCardCentered = ({product}) => {
+// const ProductCardCentered = () => {
   
 
     
@@ -19,7 +20,7 @@ const ProductCardCentered = () => {
 
         <div className="">
 
-          <img src={bg} alt="img" className="card-img" />
+          {/* <img src={bg} alt="img" className="card-img" />
             <p className="category-text">
               <small className="">Category</small>
             </p>
@@ -28,12 +29,13 @@ const ProductCardCentered = () => {
             <p className="price-text">
               <b>$35.00</b>
               
-            </p>
+            </p> */}
             
            
 
     {/* gör länk till prod.details på hela "kortet" */}
-        {/* <Link to={'/products/${product._id}'}>
+        <Link to={`/products/${product.id}`}>
+        {/* <Link to={'/Details'}> */}
           <img src={product.image} alt="Product" className="card-img" />
           <p className="category-text">
             <small className="">Category</small>
@@ -43,7 +45,7 @@ const ProductCardCentered = () => {
           <p className="price-text">
             <b>${product.price}</b>
           </p>
-        </Link> */}
+        </Link>
 
         </div>
 

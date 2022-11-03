@@ -1,14 +1,27 @@
 import React from 'react'
 import NavDetails from '../../components/ProductDetails/NavDetails';
+import { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { getProductById } from '../../store/actions/productDetailActions';
+import { useParams } from 'react-router-dom'
 
 
 const Details = () => {
+
+  const dispatch = useDispatch()
+  const { id } = useParams()
+
+  useEffect(() => {
+    dispatch(getProductById(id))
+  }, [dispatch, id])
+
+  const productDetail = useSelector(state => state.productDetail.data)
+
   return (
+    
     <div className="container my-5 py-5 z-depth-1">
-
-
+    { productDetail && 
     <section className="text-center">
-  
       <h3 className="font-weight-bold mb-5">Product Details</h3>
   
       <div className="row">
@@ -19,7 +32,7 @@ const Details = () => {
   
             <div className="carousel-inner text-center text-md-left" role="listbox">
               <div className="carousel-item active">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/8.jpg"
+                <img src={productDetail.image}
                   alt="First slide" className="img-fluid"/>
               </div>
               <div className="carousel-item">
@@ -48,18 +61,18 @@ const Details = () => {
         <div className="col-lg-5 text-center text-md-left">
   
           <h2 className="h2-responsive text-center text-md-left product-name font-weight-bold dark-grey-text mb-1 ml-xl-0 ml-4">
-            <strong>Modern Black Blouse</strong>
+            <strong>{productDetail.name}</strong>
           </h2>
           <span className="badge badge-danger product mb-4 ml-xl-0 ml-4">bestseller</span>
           <h3 className="h3-responsive text-center text-md-left mb-5 ml-xl-0 ml-4">
             <span className="red-text font-weight-bold">
-              <strong>200 kr</strong>
+              <strong>${productDetail.price}</strong>
             </span>
-            <span className="grey-text">
+            {/* <span className="grey-text">
               <small>
                 <s>300 kr</s>
               </small>
-            </span>
+            </span> */}
           </h3>
   
           <div className="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
@@ -175,8 +188,10 @@ const Details = () => {
   
       </div>
   
-    </section>
     <NavDetails />
+    </section>
+
+    }
   
   
   </div>

@@ -1,12 +1,24 @@
 import React from 'react'
 import ProductCardCentered from '../../components/Products/ProductCardCentered';
 import './ProductsLinkView.css';
+import { Link } from 'react-router-dom'
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { getProducts } from '../../store/actions/productsActions';
 
 
 const ProductsLinkView = () => {
+
+    const dispatch = useDispatch()
+
+    const {data: products, loading} = useSelector(state => state.products)
+
+    useEffect(() => {
+        dispatch(getProducts())
+    }, [dispatch])
+
   return (
     <div className='mt-views container'>
-
     {/* navbar breadcrumbs (gör egen komponent, el hur lägga, 
         den här menyn ska oxå vara på productdetail? Hur strukturerar vi views?)*/}
         <nav className="navbar navbar-expand-lg navbar-light shadow-none">
@@ -19,10 +31,10 @@ const ProductsLinkView = () => {
                             </a>
                         </li>
                         <li className="breadcrumb-item">
-                            <a href="#">Categories</a>
+                            <Link to="#">Categories</Link>
                         </li>
                         <li className="breadcrumb-item">
-                            <a href="#">Product Page</a>
+                            <Link to="#">Product Page</Link>
                         </li>
                     </ol>
                 </nav>
@@ -73,10 +85,10 @@ const ProductsLinkView = () => {
                         <span className="visually-hidden">Toggle Dropdown</span>
                     </button>
                     <ul className='dropdown-menu dropdown-menu-end'>
-                        <li><a className='dropdown-item' href="#">Price Lowest </a></li>
-                        <li><a className='dropdown-item' href="#">Price Highest</a></li>
-                        <li><a className='dropdown-item' href="#">Alphabetical</a></li>
-                        <li><a className='dropdown-item' href="#">Reviews</a></li>
+                        <li><Link className='dropdown-item' to="#">Price Lowest </Link></li>
+                        <li><Link className='dropdown-item' to="#">Price Highest</Link></li>
+                        <li><Link className='dropdown-item' to="#">Alphabetical</Link></li>
+                        <li><Link className='dropdown-item' to="#">Reviews</Link></li>
                     </ul>
                   </div>
 
@@ -94,23 +106,20 @@ const ProductsLinkView = () => {
                         <span className="visually-hidden">Toggle Dropdown</span>
                     </button>
                     <ul className='dropdown-menu dropdown-menu-end text-end'>
-                        <li><a className='dropdown-item' href="#">24 </a></li>
-                        <li><a className='dropdown-item' href="#">50</a></li>
-                        <li><a className='dropdown-item' href="#">100</a></li>
+                        <li><Link className='dropdown-item' to="#">24 </Link></li>
+                        <li><Link className='dropdown-item' to="#">50</Link></li>
+                        <li><Link className='dropdown-item' to="#">100</Link></li>
                     </ul>
                   </div>
 
                 </div>
 
                 {/*products grid, 3col 4row */}
-                <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 mt-2'>        
-                    <ProductCardCentered />
-                    <ProductCardCentered />
-                    <ProductCardCentered />
-                    <ProductCardCentered />
-                    <ProductCardCentered />
-                    <ProductCardCentered />
-                    <ProductCardCentered />
+                <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 mt-2'>   
+                    { loading && <p>Loading...</p> }
+                    { products.map(product => (
+                        <ProductCardCentered key={product.id} product={product}/>                        
+                    ))}  
                 </div>
             </div>
             {/*End products grid */}
@@ -120,19 +129,19 @@ const ProductsLinkView = () => {
             <nav aria-label="pagination more products" className='mt-3 d-flex justify-content-center'>
                 <ul className="pagination pagination-circle">
                     <li className="page-item">
-                        <a className="page-link"><i className="fa-solid fa-angle-left"></i></a>
+                        <Link className="page-link"><i className="fa-solid fa-angle-left"></i></Link>
                     </li>
                     <li className="page-item active">
-                        <a className="page-link" href="#">01 <span className="visually-hidden">(current)</span></a>
+                        <Link className="page-link" to="#">01 <span className="visually-hidden">(current)</span></Link>
                     </li>
                     <li className="page-item" aria-current="page">
-                        <a className="page-link" href="#">02</a>
+                        <Link className="page-link" to="#">02</Link>
                     </li>
                     <li className="page-item">
-                        <a className="page-link" href="#">03</a>
+                        <Link className="page-link" to="#">03</Link>
                     </li>
                     <li className="page-item">
-                        <a className="page-link" href="#"><i className="fa-solid fa-angle-right"></i></a>
+                        <Link className="page-link" to="#"><i className="fa-solid fa-angle-right"></i></Link>
                     </li>
                 </ul>
             </nav>
