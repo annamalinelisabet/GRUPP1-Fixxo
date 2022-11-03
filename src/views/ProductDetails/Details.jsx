@@ -36,11 +36,11 @@ const Details = () => {
                   alt="First slide" className="img-fluid"/>
               </div>
               <div className="carousel-item">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/5.jpg"
+                <img src={productDetail.image}
                   alt="Second slide" className="img-fluid"/>
               </div>
               <div className="carousel-item">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/7.jpg"
+                <img src={productDetail.image}
                   alt="Third slide" className="img-fluid"/>
               </div>
             </div>
@@ -75,81 +75,7 @@ const Details = () => {
             </span> */}
           </h3>
   
-          <div className="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
-  
-            <div className="card">
-  
-              <div className="card-header" role="tab" id="headingOne1">
-                <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
-                  aria-controls="collapseOne1">
-                  <h5 className="mb-0">
-                    Description
-                    <i className="fas fa-angle-down rotate-icon"></i>
-                  </h5>
-                </a>
-              </div>
-  
-              <div id="collapseOne1" className="collapse show" role="tabpanel" aria-labelledby="headingOne1"
-                data-parent="#accordionEx">
-                <div className="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                  3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                  moon
-                  tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                </div>
-              </div>
-            </div>
-  
-            <div className="card">
-  
-              <div className="card-header" role="tab" id="headingTwo2">
-                <a className="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
-                  aria-expanded="false" aria-controls="collapseTwo2">
-                  <h5 className="mb-0">
-                    Details
-                    <i className="fas fa-angle-down rotate-icon"></i>
-                  </h5>
-                </a>
-              </div>
-  
-              <div id="collapseTwo2" className="collapse" role="tabpanel" aria-labelledby="headingTwo2"
-                data-parent="#accordionEx">
-                <div className="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                  3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                  moon
-                  tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                </div>
-              </div>
-            </div>
-  
-            <div className="card">
-  
-              <div className="card-header" role="tab" id="headingThree3">
-                <a className="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
-                  aria-expanded="false" aria-controls="collapseThree3">
-                  <h5 className="mb-0">
-                    Shipping
-                    <i className="fas fa-angle-down rotate-icon"></i>
-                  </h5>
-                </a>
-              </div>
-  
-              <div id="collapseThree3" className="collapse" role="tabpanel" aria-labelledby="headingThree3"
-                data-parent="#accordionEx">
-                <div className="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                  3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                  moon
-                  tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                </div>
-              </div>
-            </div>
-  
-          </div>
+          
   
           <section className="color">
             <div className="mt-5">
