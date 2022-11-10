@@ -1,6 +1,7 @@
 import React from 'react'
 import CheckoutForm from '../../components/CheckoutForm/CheckoutForm'
 import CheckoutTop from '../../components/CheckoutTop/CheckoutTop'
+import ShoppingCart from '../../components/shoppingCart/ShoppingCart'
 import './Checkout.css'
 
 const Checkout = () => {
@@ -9,8 +10,7 @@ const Checkout = () => {
         <CheckoutTop />
         <div className="checkout-divs">
             <div className='summary'>
-                <h4>Checkout</h4>
-                <p>Här ska varukorgen vara</p>
+              <ShoppingCart />
             </div>
             <CheckoutForm />
         </div>
