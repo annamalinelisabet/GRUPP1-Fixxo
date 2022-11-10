@@ -2,18 +2,16 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
-import { useSelector } from 'react-redux'
-import ShoppingCart from '../shoppingCart/ShoppingCart'
-
+import { useSelector } from "react-redux";
+import ShoppingCart from "../shoppingCart/ShoppingCart";
 
 const Navbar = () => {
-
-  const totalQuantity = useSelector(state => state.cartReducer.totalQuantity)
+  const totalQuantity = useSelector((state) => state.cartReducer.totalQuantity);
 
   const [navbarScroll, setNavbarScroll] = useState(false);
 
   const changeBg = () => {
-    if (window.scrollY >= 120) {
+    if (window.scrollY >= 1) {
       setNavbarScroll(true);
     } else {
       setNavbarScroll(false);
@@ -38,29 +36,32 @@ const Navbar = () => {
             Products
           </Link>
         </li>
-        </ul>
-        <div className="d-flex align-items-center">
-          <div className="dropdown">
-            <span
-              className="text-reset me-3 dropdown-toggle hidden-arrow"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-mdb-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <i className="fas fa-shopping-cart"></i>
-             {totalQuantity >= 1 && <span className="badge rounded-pill badge-notification bg-danger">{totalQuantity}</span>}
-            </span>
-            <ul
-              className="dropdown-menu dropdown-menu-end"
-              aria-labelledby="navbarDropdownMenuLink"
-            >
-              <ShoppingCart />
-            </ul>
-          </div>
+      </ul>
+      <div className="d-flex align-items-center">
+        <div className="dropdown">
+          <span
+            className="text-reset me-3 dropdown-toggle hidden-arrow"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i className="fas fa-shopping-cart"></i>
+            {totalQuantity >= 1 && (
+              <span className="badge rounded-pill badge-notification bg-danger">
+                {totalQuantity}
+              </span>
+            )}
+          </span>
+          <ul
+            className="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+            <ShoppingCart />
+          </ul>
         </div>
       </div>
-  
+    </div>
   );
 };
 
