@@ -1,5 +1,5 @@
 .m-Navbar {
-    padding-block: .7rem;
+    padding: .7rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,16 +20,18 @@
     color: var(--black);
     font-weight: 700;
     font-size: 1.5rem;
-    padding-inline: 1rem;
 }
 
-.m-Navbar .m-nav-links,
-.m-Navbar .m-profile-links {
+.m-Navbar .m-nav-links {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;    
+    text-align: center;
+    width: 120px;
+    padding: 0;
 }
+
 
 .m-Navbar .m-nav-link,
 .m-Navbar .m-profile-link
@@ -37,7 +39,6 @@
     color: var(--black);
     font-weight: 500;
     font-size: .8rem;
-    padding: 0 1rem;
 }
 
 /* .m-Navbar .active {

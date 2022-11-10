@@ -31,29 +31,29 @@ const Navbar = () => {
             Products
           </Link>
         </li>
-        <div className="d-flex align-items-center">
-          <div className="dropdown">
-            <span
-              className="text-reset me-3 dropdown-toggle hidden-arrow"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-mdb-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <i className="fas fa-shopping-cart"></i>
-              <span className="badge rounded-pill badge-notification bg-danger">
-                1
-              </span>
-            </span>
-            <ul
-              className="dropdown-menu dropdown-menu-end"
-              aria-labelledby="navbarDropdownMenuLink"
-            >
-              SHOPPINGCART
-            </ul>
-          </div>
-        </div>
       </ul>
+      <div className="d-flex align-items-center">
+        <div className="dropdown">
+          <span
+            className="text-reset me-3 dropdown-toggle hidden-arrow"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i className="fas fa-shopping-cart"></i>
+            <span className="badge rounded-pill badge-notification bg-danger">
+              1
+            </span>
+          </span>
+          <ul
+            className="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+            SHOPPINGCART
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };
