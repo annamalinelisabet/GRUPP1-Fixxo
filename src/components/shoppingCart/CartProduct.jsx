@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux'
 import { decrement, addToCart, removeOne } from '../../store/actions/cartActions'
+import "./Cart.css";
 
 const CartProduct = ({ item }) => {
 
