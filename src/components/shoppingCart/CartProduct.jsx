@@ -10,7 +10,7 @@ const CartProduct = ({ item }) => {
   return (
     <div className='d-flex justify-content-between align-items-center p-2'>
       <div className='d-flex align-items-center'>
-        <img src={item.imgage} className="img-fluid cart-image" />
+        <img src={item.image} className="img-fluid cart-image" />
         <div>
           <div><strong>{item.name}</strong></div>
           <div><small>{item.quantity} x {item.price}</small></div>
