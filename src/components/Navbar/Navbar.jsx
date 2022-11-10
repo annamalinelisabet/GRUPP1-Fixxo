@@ -22,29 +22,15 @@ const Navbar = () => {
       </Link>
       <ul className="m-nav-links">
         <li>
-          <Link to="/" end className="m-nav-link">
+          <Link to="/" className="m-nav-link">
             Home
           </Link>
         </li>
         <li>
-          <Link to="#" className="m-nav-link">
+          <Link to="/products" className="m-nav-link">
             Products
           </Link>
         </li>
-      </ul>
-      <ul className="m-profile-links">
-        <li>
-          <Link to="#" className="m-profile-link">
-            <i className="fa-solid fa-magnifying-glass"></i>
-          </Link>
-        </li>
-        </ul>
-        {/*<li><Link to="#" className='m-profile-link'><i className="fa-solid fa-bag-shopping"></i></Link></li>  */}
-
-      <Link to ="/" className='m-navbar-logo'>Fixxo.</Link>
-      <ul className='m-nav-links'>
-        <li><Link to="/" className='m-nav-link'>Home</Link></li>
-        <li><Link to="/products" className='m-nav-link'>Products</Link></li>
         <div className="d-flex align-items-center">
           <div className="dropdown">
             <span
