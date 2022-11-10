@@ -1,9 +1,9 @@
 import React from 'react'
 import './ProductDetails.css'
 
-const Description = () => {
+const Description = () => {  
   return (
-    <div>
+    <div className='text-start'>
       <p>Way extensive and dejection get delivered deficient sincerity gentleman age. Too end instrument possession contrasted motionless. Calling offence six joy feeling. Coming merits and was talent enough far. Sir joy northward sportsmen education. Discovery incommode earnestly no he commanded if. Put still any about manor heard. </p>
       <div>
         <li>Village did removed enjoyed explain nor ham saw calling talking.</li>
