@@ -18,7 +18,7 @@ const ShoppingCart = () => {
         )}
 
         { cart.map(item => (
-          <CartProduct key={item._id} item={item} />
+          <CartProduct key={item.id} item={item} />
         )) }
 
         <div className="dropdown-divider"></div>

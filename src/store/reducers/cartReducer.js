@@ -6,18 +6,6 @@ const initState = {
     totalAmount: 0
 }
 
-// item = {
-//     PRODUCT: { name, priec, desc},
-//     quantity: 12
-// }
-
-// cartItem = {
-//     name,
-//     price, 
-//     desc,
-//     quantity
-// }
-
 const cartReducer = (state = initState, action) => {    
     // let itemRef;
 
@@ -25,7 +13,7 @@ const cartReducer = (state = initState, action) => {
 
         case actiontypes().cart.add: {
 
-            const itemRef = state.cart.find(item => item._id === action.payload._id)
+            const itemRef = state.cart.find(item => item.id === action.payload.id)
 
             let cartItem = {
                 ...action.payload,
@@ -44,10 +32,10 @@ const cartReducer = (state = initState, action) => {
 
         }
         case actiontypes().cart.decrement:{
-            const itemRef = state.cart.find(item => item._id === action.payload)
+            const itemRef = state.cart.find(item => item.id === action.payload)
 
             itemRef.quantity === 1
-            ? state.cart = state.cart.filter(item => item._id !== action.payload)
+            ? state.cart = state.cart.filter(item => item.id !== action.payload)
             : itemRef.quantity -= 1
 
             return {
@@ -58,7 +46,7 @@ const cartReducer = (state = initState, action) => {
         }
 
         case actiontypes().cart.removeOne: {
-            state.cart = state.cart.filter(item => item._id !== action.payload)
+            state.cart = state.cart.filter(item => item.id !== action.payload)
 
             return {
                 ...state,
