@@ -5,6 +5,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getProductById } from '../../store/actions/productDetailActions';
 import { useParams } from 'react-router-dom'
 
+import { addToCart } from '../../store/actions/cartActions'
+
 
 const Details = () => {
 
@@ -105,7 +107,9 @@ const Details = () => {
   
               <div className="row mt-3">
                 <div className="col-md-12 text-center text-md-left text-md-right">
-                  <button className="btn btn-news btn-rounded">Shoop New</button>
+                  {/* <button className="btn btn-news btn-rounded">Shop New</button> */}
+                <button className='btn btn-news btn-rounded' onClick={() => dispatch(addToCart(productDetail))}>Add To Cart</button>
+
                 </div>
               </div>
             </div>
