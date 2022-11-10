@@ -1,0 +1,19 @@
+.d-underline {
+  border-bottom: 1px solid #616365;
+}
+
+.d-underline-active {
+  border-bottom: 1px solid #FF7373;
+}
+
+.d-text {
+  color: #616365;
+}
+
+.d-text-active {
+  color: #FF7373;
+}
+
+.d-color {
+  color: #FF7373;
+}
