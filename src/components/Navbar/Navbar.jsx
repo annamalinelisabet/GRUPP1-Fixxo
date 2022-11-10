@@ -2,7 +2,14 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
+import { useSelector } from 'react-redux'
+import ShoppingCart from '../shoppingCart/ShoppingCart'
+
+
 const Navbar = () => {
+
+  const totalQuantity = useSelector(state => state.cartReducer.totalQuantity)
+
   const [navbarScroll, setNavbarScroll] = useState(false);
 
   const changeBg = () => {
@@ -41,15 +48,17 @@ const Navbar = () => {
               aria-expanded="false"
             >
               <i className="fas fa-shopping-cart"></i>
-              <span className="badge rounded-pill badge-notification bg-danger">
+              {/* <span className="badge rounded-pill badge-notification bg-danger">
                 1
-              </span>
+              </span> */}
+             {totalQuantity >= 1 && <span className="badge rounded-pill badge-notification bg-danger">{totalQuantity}</span>}
+
             </span>
             <ul
               className="dropdown-menu dropdown-menu-end"
               aria-labelledby="navbarDropdownMenuLink"
             >
-              SHOPPINGCART
+              <ShoppingCart />
             </ul>
           </div>
         </div>
