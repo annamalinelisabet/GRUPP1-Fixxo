@@ -74,6 +74,7 @@ const Details = () => {
               </small>
             </span> */}
           </h3>
+          
   
           
   
