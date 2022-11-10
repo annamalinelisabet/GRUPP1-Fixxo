@@ -1,0 +1,21 @@
+.m-Checkout {
+    margin: auto;
+    width: 90%;
+    max-width: 1020px;
+}
+
+.m-Checkout h4,
+.m-Checkout p{
+    color: var(--black);
+}
+
+.m-Checkout .summary {
+    flex: 1;
+}
+
+@media (min-width: 992px) {
+    .m-Checkout .checkout-divs {
+        display: flex;
+        justify-content: space-between;
+    }
+}

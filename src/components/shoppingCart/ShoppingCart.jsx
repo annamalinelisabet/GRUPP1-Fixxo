@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux'
 import CartProduct from './CartProduct'
 import { clearCart } from '../../store/actions/cartActions'
+import { Link } from 'react-router-dom'
 
 const ShoppingCart = () => {
 
@@ -29,7 +30,7 @@ const ShoppingCart = () => {
             </div>
             <div>
                 <button className='btn btn-warning' onClick={() => dispatch(clearCart())}>Clear Cart</button>
-                <button className='btn btn-info ms-2'>Checkout</button>
+                <Link to='/checkout'><button className='btn btn-info ms-2'>Checkout</button></Link>
             </div>
         </div>
     </div>
