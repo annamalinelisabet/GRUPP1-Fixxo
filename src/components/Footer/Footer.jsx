@@ -16,11 +16,16 @@ const Footer = () => {
               <h5 className="fcolor">Customer Service</h5>
 
               <ul className="list-unstyled">
-                <li><Link to="#" className='linkf'>Help & FAQs </Link></li>
-                <li><Link to="#" className='linkf'>Order Lookup</Link></li>
-                <li><Link to="#" className='linkf'>Shipping & Delivery</Link></li>
-                <li><Link to="#" className='linkf'>Returns</Link></li>
-                <li><Link to="#" className='linkf'>Contact Us</Link></li>
+                <li><a href='https://customerservice-macys.com/' target="_blank" rel="noopener noreferrer" className='linkf'>
+                Help & FAQs </a></li>
+                <li><a href='https://customerservice-macys.com/' target="_blank" rel="noopener noreferrer" className='linkf'>
+                Order Lookup </a></li>
+                <li><a href='https://customerservice-macys.com/' target="_blank" rel="noopener noreferrer" className='linkf'>
+                Shipping & Delivery </a></li>
+                <li><a href='https://customerservice-macys.com/' target="_blank" rel="noopener noreferrer" className='linkf'>
+                Returns </a></li>
+                <li><a href='https://customerservice-macys.com/' target="_blank" rel="noopener noreferrer" className='linkf'>
+                Contact Us </a></li>
               </ul>
 
             </div>
@@ -31,7 +36,7 @@ const Footer = () => {
 
               <ul className="list-unstyled">
                 <li><a href='https://www.macys.com/p/credit-service/learn-and-apply/' target="_blank" rel="noopener noreferrer" className='linkf'>
-                  Macy's Card Services</a></li>
+                Macy's Card Services</a></li>
                 <li><a href='https://www.macys.com/p/credit-service/learn-and-apply/' target="_blank" rel="noopener noreferrer" className='linkf'>
                 Pay Your Credit Card Bill</a></li>
                 <li><a href='https://www.macys.com/p/credit-service/learn-and-apply/' target="_blank" rel="noopener noreferrer" className='linkf'>
@@ -47,10 +52,14 @@ const Footer = () => {
               <h5 className="fcolor">Our Stores</h5>
 
               <ul className="list-unstyled text-danger">
-                <li><Link to="#" className='linkf'>Stores & Services</Link></li>
-                <li><Link to="#" className='linkf'>Locations & Hours</Link></li>
-                <li><Link to="#" className='linkf'>Store Events</Link></li>
-                <li><Link to="#" className='linkf'>Catalogs</Link></li>
+                <li><a href='https://customerservice-macys.com/articles/what-is-my-local-macys-store-information' target="_blank" rel="noopener noreferrer" className='linkf'>
+                Stores & Services </a></li>
+                <li><a href='https://customerservice-macys.com/articles/what-is-my-local-macys-store-information' target="_blank" rel="noopener noreferrer" className='linkf'>
+                Locations & Hours </a></li>
+                <li><a href='https://customerservice-macys.com/articles/what-is-my-local-macys-store-information' target="_blank" rel="noopener noreferrer" className='linkf'>
+                Store Events</a></li>
+                <li><a href='https://customerservice-macys.com/articles/what-is-my-local-macys-store-information' target="_blank" rel="noopener noreferrer" className='linkf'>
+                Catalogs</a></li>
               </ul>
 
             </div>
