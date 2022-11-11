@@ -11,7 +11,6 @@ import ProductsView from '../../components/ProductsView/ProductsView';
 import Speciality from '../../components/Speciality/Speciality'
 
 
-
 const Home = () => {
   return (
     <div className="Home">

@@ -19,7 +19,7 @@ const News = () => {
               <p className='p-element'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
                 accusantium doloremque laudantium, totam rem apriam eaque ipsa 
                 quae ab illo inventore.</p>
-                <Link to="/blog"><button className='btn-news'>SHOP NOW</button></Link>
+                <Link to="/products"><button className='btn-news'>SHOP NOW</button></Link>
             </div>
             <div className="img d-none d-sm-none d-lg-block">
               <img className='' src={woman} height={250} alt="man shopping" />
@@ -40,7 +40,7 @@ const News = () => {
         "> 
               <div className="new-arrivals container text-center m-b">
                 <h4>New Arrivals</h4>
-                <Link to="/blog"><button className='btn-news'>SHOP NOW</button></Link>
+                <Link to="/products"><button className='btn-news'>SHOP NOW</button></Link>
               </div>
               <div className="img d-none d-sm-none d-lg-block mt-lg-1">
                 <img className='' src={man} height={250} alt="man shopping" />
