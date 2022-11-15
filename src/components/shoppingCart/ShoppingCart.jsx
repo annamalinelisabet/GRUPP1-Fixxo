@@ -3,7 +3,7 @@ import CartProduct from './CartProduct'
 import { clearCart } from '../../store/actions/cartActions'
 import { Link } from 'react-router-dom'
 
-const ShoppingCart = () => {
+const ShoppingCart = ({checkout}) => {
 
   const { cart, totalAmount } = useSelector(state => state.cartReducer)
   const dispatch = useDispatch()
@@ -30,7 +30,7 @@ const ShoppingCart = () => {
             </div>
             <div>
                 <button className='btn btn-warning' onClick={() => dispatch(clearCart())}>Clear Cart</button>
-                <Link to='/checkout'><button className='btn btn-info ms-2'>Checkout</button></Link>
+                { !checkout && <Link to='/checkout'><button className='btn btn-info ms-2'>Checkout</button></Link> }
             </div>
         </div>
     </div>

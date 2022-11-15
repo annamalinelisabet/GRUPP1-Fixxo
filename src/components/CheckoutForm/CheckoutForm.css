@@ -15,10 +15,6 @@
     margin-bottom: 1rem;
 }
 
-.m-CheckoutForm h6 {
-    color: var(--black);
-}
-
 .m-CheckoutForm .m-input-div {
     display: flex;
 }
@@ -31,12 +27,28 @@
     flex: 5;
 }
 .m-CheckoutForm button {
-    margin-block: .5rem;
+    margin-bottom: .5rem;
 }
 
 .m-CheckoutForm small {
     display: block;
     text-align: center;
+}
+
+.m-CheckoutForm .m-order-header {
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+
+.m-CheckoutForm label {
+    font-size: .8rem;
+}
+
+.m-CheckoutForm .m-error {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background: var(--orange);
 }
 
 @media (min-width: 860px) {
