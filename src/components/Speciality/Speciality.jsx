@@ -15,7 +15,9 @@ const Speciality = () => {
         <div class="col-lg-4 col-md-10 d-flex min-height mb-lg-0 mb-2">
           <div className='col-6 textBackground p-2 d-flex flex-column justify-content-center ps-3 custom-card'>
             <p>Track Your Order</p>
-             <Link to="/"><p className='text-decoration-underline cursor-pointer'>Get Started<i class="fas fa-angle-right"></i></p></Link>
+            <a href='https://customerservice-macys.com/' target="_blank" rel="noopener noreferrer" className='linkf'>
+            <p className='text-decoration-underline cursor-pointer'>Get Started<i class="fas fa-angle-right"></i></p>
+            </a>
           </div>
           <div className='col-6 grey p-2 d-flex justify-content-center align-items-center'>
             <img src={woman} className="imgPic" alt=".." />
@@ -25,7 +27,9 @@ const Speciality = () => {
         <div class="col-lg-4 col-md-10 d-flex min-height mb-lg-0 mb-2">
           <div className='col-6 textBackground p-2 d-flex flex-column justify-content-center ps-3 custom-card'>
             <p>Make a Return</p>
-            <Link to="/"><p className='text-decoration-underline'>Get Started <i class="fas fa-angle-right"></i></p></Link>
+            <a href='https://customerservice-macys.com/' target="_blank" rel="noopener noreferrer" className='linkf'>
+            <p className='text-decoration-underline'>Get Started <i class="fas fa-angle-right"></i></p>
+            </a>
           </div>
           <div className='col-6 grey p-2 d-flex justify-content-center align-items-center'>
             <img src={woman} className="imgPic" alt=".." />
@@ -35,7 +39,9 @@ const Speciality = () => {
         <div class="col-lg-4 col-md-10 d-flex min-height">
           <div className='col-6 textBackground p-2 d-flex flex-column justify-content-center ps-3 custom-card'>
             <p>Request a Price Adjustment</p>
-            <Link to="/"><p className='text-decoration-underline'>Get Started <i class="fas fa-angle-right"></i></p></Link>
+            <a href='https://customerservice-macys.com/' target="_blank" rel="noopener noreferrer" className='linkf'>
+            <p className='text-decoration-underline'>Get Started <i class="fas fa-angle-right"></i></p>
+            </a>
           </div>
           <div className='col-6 grey p-2 d-flex justify-content-center align-items-center'>
             <img src={woman} className="imgPic" alt=".." />
