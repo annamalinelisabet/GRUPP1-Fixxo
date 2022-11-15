@@ -24,9 +24,9 @@ const ProductList = () => {
                       
                     { loading && <p>Loading...</p> }
                       { products.slice(0,3).map(product => (
+
         <section className="product-container mt-5">
                       
-        
           <div className="product-wrapper">
             <h4>Latest Product</h4>
             <div className="product-card mt-4">
@@ -39,16 +39,15 @@ const ProductList = () => {
             <div className="product-card mt-4">
             <ProductCard key={product.id} product={product}/> 
             </div>
-            
           </div>
           <div className="product-wrapper">
             <h4>Top Reacted Product</h4>
             <div className="product-card mt-4">
             <ProductCard key={product.id} product={product}/> 
             </div>
-            
           </div>
         </section>
+        
       ))}  
     </div>
   );
