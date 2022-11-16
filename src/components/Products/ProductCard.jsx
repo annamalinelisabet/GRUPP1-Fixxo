@@ -12,12 +12,12 @@ const ProductCard = () => {
    
     <div className="col">
       <div className="">
-        <div className="row">
-          <div className="col-6">
+        <div className="row d-flex flex-row flex-md-column flex-lg-row justify-content-center align-items-center">
+          <div className="col-6 col-sm-7 col-md-9 col-lg-6">
             <img src={bg} alt="img" className="card-img" />
           </div>
-          <div className="col-6">
-            <p className="category-text">
+          <div className="col-6 col-sm-7 col-md-9 col-lg-6 text-center text-lg-start">
+            <p className="category-text mb-lg-0">
               <small className="">Category</small>
             </p>
             <h5 className="title-text">Modern Black Blouse</h5>
