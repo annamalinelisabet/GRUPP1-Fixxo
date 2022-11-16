@@ -68,16 +68,10 @@ const Details = () => {
             <span className="red-text font-weight-bold">
               <strong>${productDetail.price}</strong>
             </span>
-            {/* <span className="grey-text">
-              <small>
-                <s>300 kr</s>
-              </small>
-            </span> */}
           </h3>
+
+          <h5 className="text-center text-md-left mb-5 ml-xl-0 ml-4">{productDetail.descShort}</h5>
           
-  
-          
-  
           <section className="color">
             <div className="mt-5">
               <p className="grey-text">Choose your size</p>
