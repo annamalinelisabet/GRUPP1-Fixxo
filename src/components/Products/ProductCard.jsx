@@ -13,18 +13,12 @@ const ProductCard = ({product}) => {
   return (
      
     <Link to={`/products/${product.id}`}>
-
-      
-    
-    <div className="col">
-      <div className="">
-        <div className="row">
-          <div className="col-6">
-          
+        <div className="row d-flex flex-row flex-md-column flex-lg-row justify-content-center align-items-center">
+          <div className="col-6 col-sm-7 col-md-9 col-lg-6">
             <img src={product.image} alt="img" className="card-img" />
           </div>
-          <div className="col-6">
-            <p className="category-text">
+          <div className="col-6 col-sm-7 col-md-9 col-lg-6 text-center text-lg-start">
+            <p className="category-text mb-lg-0">
               <small className="">Category</small>
             </p>
             <h5 className="title-text">{product.name}</h5>
@@ -35,8 +29,6 @@ const ProductCard = ({product}) => {
             
           </div>
         </div>
-      </div>
-    </div>
     </Link>
   );
 };

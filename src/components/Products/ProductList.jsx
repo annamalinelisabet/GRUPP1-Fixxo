@@ -22,34 +22,94 @@ const ProductList = () => {
 
     
                       
-                    { loading && <p>Loading...</p> }
-                      { products.slice(0,3).map(product => (
-
-        <section className="product-container mt-5">
-                      
-          <div className="product-wrapper">
-            <h4>Latest Product</h4>
-            <div className="product-card mt-4">
-            <ProductCard key={product.id} product={product}/> 
-            </div>
-          </div>
-
-          <div className="product-wrapper">
-            <h4>Best Selling Product</h4>
-            <div className="product-card mt-4">
-            <ProductCard key={product.id} product={product}/> 
-            </div>
-          </div>
-          <div className="product-wrapper">
-            <h4>Top Reacted Product</h4>
-            <div className="product-card mt-4">
-            <ProductCard key={product.id} product={product}/> 
-            </div>
-          </div>
-        </section>
+                { loading && <p>Loading...</p> }
+                { products.slice(0,3).map(product => (
         
+        <section className="container-lg mt-5 d-flex flex-column justify-content-center align-items-center mb-4 flex-md-column flex-lg-row">
+      
+        <div className="product-wrapper mt-3 mt-md-3 mt-lg-4">
+          <h4 className="text-center text-lg-start">Latest Product</h4>
+          <div className="d-flex flex-column flex-sm-row d-md-flex flex-md-row flex-lg-column">
+            <div className="product-card ">
+            <ProductCard key={product.id} product={product}/> 
+            </div>
+          </div>
+        </div>
+       
+        <div className="product-wrapper mt-3 mt-md-3 mt-lg-4">
+          <h4 className="text-center text-lg-start">Best Selling Product</h4>
+          <div className="d-flex flex-column d-sm-flex flex-sm-row d-md-flex flex-md-row flex-lg-column">
+            <div className="product-card ">
+            <ProductCard key={product.id} product={product}/> 
+            </div>
+          </div>
+        </div>
+       
+        <div className="product-wrapper mt-3 mt-md-3 mt-lg-4">
+          <h4 className=" text-center text-lg-start">Top Reacted Product</h4>
+          <div className="d-flex flex-column  d-sm-flex flex-sm-row d-md-flex flex-md-row flex-lg-column">
+          <div className="product-card ">
+            <ProductCard key={product.id} product={product}/> 
+            </div>
+          </div>
+        </div>
+      </section>
       ))}  
     </div>
+
+
+
+
+
+
+
+    // <section className="container-lg mt-5 d-flex flex-column justify-content-center align-items-center mb-4 flex-md-column flex-lg-row">
+      
+    //   <div className="product-wrapper mt-3 mt-md-3 mt-lg-4">
+    //     <h4 className="text-center text-lg-start">Latest Product</h4>
+    //     <div className="d-flex flex-column flex-sm-row d-md-flex flex-md-row flex-lg-column">
+    //       <div className="product-card ">
+    //       <ProductCard key={product.id} product={product}/> 
+    //       </div>
+    //       <div className="product-card">
+    //       <ProductCard key={product.id} product={product}/> 
+    //       </div>
+    //       <div className="product-card">
+    //       <ProductCard key={product.id} product={product}/> 
+    //       </div>
+    //     </div>
+    //   </div>
+     
+    //   <div className="product-wrapper mt-3 mt-md-3 mt-lg-4">
+    //     <h4 className="text-center text-lg-start">Best Selling Product</h4>
+    //     <div className="d-flex flex-column d-sm-flex flex-sm-row d-md-flex flex-md-row flex-lg-column">
+    //       <div className="product-card">
+    //         <ProductCard />
+    //       </div>
+    //       <div className="product-card">
+    //         <ProductCard />
+    //       </div>
+    //       <div className="product-card">
+    //         <ProductCard />
+    //       </div>
+    //     </div>
+    //   </div>
+     
+    //   <div className="product-wrapper mt-3 mt-md-3 mt-lg-4">
+    //     <h4 className=" text-center text-lg-start">Top Reacted Product</h4>
+    //     <div className="d-flex flex-column  d-sm-flex flex-sm-row d-md-flex flex-md-row flex-lg-column">
+    //       <div className="product-card ">
+    //         <ProductCard />
+    //       </div>
+    //       <div className="product-card">
+    //         <ProductCard />
+    //       </div>
+    //       <div className="product-card">
+    //         <ProductCard />
+    //       </div>
+    //     </div>
+    //   </div>
+    // </section>
   );
 };
 
