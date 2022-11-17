@@ -18,7 +18,6 @@ const Inspiration = () => {
             </div>
             <div className="new-sale container text-center m-b">
               <h4 className='e-white'>Pamela Reif's Top Picks</h4>
-              {/* <h4 className='h4-w'>Top Picks</h4> */}
               <Link to="/products"><button className='btn-news'>SHOP NOW</button></Link>
             </div>
         </div>

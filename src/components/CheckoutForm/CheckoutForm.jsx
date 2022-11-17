@@ -62,21 +62,6 @@ const CheckoutForm = () => {
             <input onChange={e => setLastName(e.target.value)} value={lastName} type="text" name='lastName' placeholder='Enter your last name'/>
           </div>
         </div>
-        {/* <h5 className='m-order-header'>Shipping information</h5>
-        <div>
-          <label htmlFor="address">Address:</label>
-          <input onChange={e => setAddress(e.target.value)} value={address} type="text" name='address' placeholder='Enter your address'/>
-        </div>
-        <div className='m-input-div'>
-          <div className='input1'>
-            <label htmlFor="postalCode">Postal code:</label>
-            <input onChange={e => setPostalCode(e.target.value)} value={postalCode} type="text" name='postalCode' placeholder='Enter your postal code'/>
-          </div>
-          <div className='input2'>
-            <label htmlFor="city">City:</label>
-            <input onChange={e => setCity(e.target.value)} value={city} type="text" name='city' placeholder='Enter your city'/>
-          </div>
-        </div> */}
         { error && <p className='m-error'>{error}</p>}
         <button className='btn-news m-width'>ORDER NOW</button>
         <small>${totalAmount}</small>

@@ -26,7 +26,6 @@ const News = () => {
             </div>
         </div>
       </div>
-      {/* flex-md-column flex-md-column-reverse */}
       <div className="col-md-5 gy-2 gy-md-0 bg2 ">
         <div 
         className="

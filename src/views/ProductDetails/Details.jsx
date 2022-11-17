@@ -18,7 +18,7 @@ const Details = () => {
   const productDetail = useSelector((state) => state.productDetail.data);
 
   return (
-    <div className="container my-5 py-5 z-depth-1">
+    <div className="container my-5 py-5 z-depth-1"> 
        {productDetail && (
         <section className="text-center">
           <h3 className="font-weight-bold mb-5">Product Details</h3>

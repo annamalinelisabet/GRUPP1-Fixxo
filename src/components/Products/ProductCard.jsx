@@ -4,10 +4,7 @@ import { Link } from 'react-router-dom'
 
 import stars from "./img/stars.svg";
 
-const ProductCard = ({product}) => {
-
-
-  
+const ProductCard = ({product}) => { 
 
 
   return (
@@ -24,7 +21,7 @@ const ProductCard = ({product}) => {
             <h5 className="title-text">{product.name}</h5>
             <img src={stars} alt="stars" className="stars" />
             <p className="price-text">
-              <b>{product.name}</b>
+              <b>${product.price}</b>
             </p>
             
           </div>

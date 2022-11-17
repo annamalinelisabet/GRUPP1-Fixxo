@@ -32,11 +32,8 @@ const ProductsLinkView = () => {
                             <span><i className="fas fa-home fa-lg"></i></span>
                             </a>
                         </li>
-                        {/* <li className="breadcrumb-item">
-                            <Link to="#">Categories</Link>
-                        </li> */}
                         <li className="breadcrumb-item">
-                            <Link to="#">Product Page</Link>
+                            <Link to="/products">Product Page</Link>
                         </li>
                     </ol>
                 </nav>
