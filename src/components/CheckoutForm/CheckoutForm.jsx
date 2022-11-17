@@ -46,7 +46,7 @@ const CheckoutForm = () => {
   } 
 
   return (
-    <form className='m-CheckoutForm ms-5' onSubmit={handleOrder}>
+    <form className='m-CheckoutForm' onSubmit={handleOrder}>
         <h5 className='m-order-header'>Customer information</h5>
         <div>
           <label htmlFor="email">Email:</label>
