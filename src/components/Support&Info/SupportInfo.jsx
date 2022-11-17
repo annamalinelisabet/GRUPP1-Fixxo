@@ -9,10 +9,6 @@ function SupportInfo() {
 
       <div className="suppInfo-icons">
 
-          {/* <div className='bg-image'>
-          <img src="images/RectangleBG.png" alt="background" />
-         </div> */}
-
         <div className='suppIcon-1'>
         <img src="images/logo1.png" alt="customer-support" />
         <h3 className='icon-text'>Customer Support</h3>
