@@ -17,3 +17,21 @@
     aspect-ratio: 1;
     object-fit: contain;
 }
+
+.total-p {
+    margin-top: 1rem;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.checkout-clear {
+    margin: 5px
+}
+
+.cart-clear {
+    margin:5px
+}
+
+.dropdown-products{
+    min-width: 500px;
+}

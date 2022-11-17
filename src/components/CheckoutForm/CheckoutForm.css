@@ -1,6 +1,8 @@
 .m-CheckoutForm {
     flex: 1;
-    background: var(--light-grey);
+    /* background: var(--light-grey); */
+    border: 1px solid var(--grey);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.218);
     padding: 1rem;
     margin-block: 2rem;
 }
