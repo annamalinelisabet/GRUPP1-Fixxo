@@ -1,21 +1,6 @@
-/* 
-.bg-image {
-    background-color: #fff;
-} */
-
-
-
-/* .suppInfo-icons {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-} */
-
-
 .suppIcon {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     text-align: center;
 }
@@ -23,39 +8,3 @@
 .suppIcon-1 p {
     text-align: center;
 }
-
-/* 
-.suppIcon-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.suppIcon-2 p {
-    text-align: center;
-}
-
-
-.suppIcon-3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.suppIcon-3 p {
-    text-align: center;
-}
-
-
-.suppIcon-4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.suppIcon-4 p {
-    text-align: center;
-} */
