@@ -74,29 +74,6 @@ const Details = () => {
           
           <section className="color">
             <div className="mt-5">
-              <p className="grey-text">Choose your size</p>
-              <div className="row text-center text-md-left">
-  
-                <div className="col-md-4 col-12">
-                  <div className="form-group">
-                    <input className="form-check-input" name="group100" type="radio" id="radio100" checked="checked"/>
-                    <label for="radio100" className="form-check-label dark-grey-text">Small</label>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className="form-group">
-                    <input className="form-check-input" name="group100" type="radio" id="radio101"/>
-                    <label for="radio101" className="form-check-label dark-grey-text">Medium</label>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className="form-group">
-                    <input className="form-check-input" name="group100" type="radio" id="radio102"/>
-                    <label for="radio102" className="form-check-label dark-grey-text">Larg</label>
-                  </div>
-                </div>
-              </div>
-  
               <div className="row mt-3">
                 <div className="col-md-12 text-center text-md-left text-md-right">
                   <button className="btn btn-news btn-rounded">Shoop New</button>
