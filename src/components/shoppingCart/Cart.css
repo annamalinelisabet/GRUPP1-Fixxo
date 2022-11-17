@@ -1,0 +1,37 @@
+.img-container {
+    width: 100%;
+    height: 300px;
+}
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.shopping-cart {
+    min-width: 550px;
+}
+
+.cart-image {
+    width: 100px;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+
+.total-p {
+    margin-top: 1rem;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.checkout-clear {
+    margin: 5px
+}
+
+.cart-clear {
+    margin:5px
+}
+
+.dropdown-products{
+    min-width: 500px;
+}

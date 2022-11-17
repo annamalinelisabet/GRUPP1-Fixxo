@@ -1,0 +1,60 @@
+.m-CheckoutForm {
+    flex: 1;
+    /* background: var(--light-grey); */
+    border: 1px solid var(--grey);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.218);
+    padding: 1rem;
+    margin-block: 2rem;
+}
+
+.m-CheckoutForm .m-width {
+    width: 100%;
+}
+.m-CheckoutForm input {
+    width: 100%;
+    border: 1px solid var(--grey);
+    padding: .3em;
+    margin-bottom: 1rem;
+}
+
+.m-CheckoutForm .m-input-div {
+    display: flex;
+}
+
+.m-CheckoutForm .input1 {
+    flex: 4;
+    margin-right: .2rem;
+}
+.m-CheckoutForm .input2 {
+    flex: 5;
+}
+.m-CheckoutForm button {
+    margin-bottom: .5rem;
+}
+
+.m-CheckoutForm small {
+    display: block;
+    text-align: center;
+}
+
+.m-CheckoutForm .m-order-header {
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+
+.m-CheckoutForm label {
+    font-size: .8rem;
+}
+
+.m-CheckoutForm .m-error {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background: var(--orange);
+}
+
+@media (min-width: 860px) {
+    .m-CheckoutForm {
+        margin-top: 0;
+    }
+}

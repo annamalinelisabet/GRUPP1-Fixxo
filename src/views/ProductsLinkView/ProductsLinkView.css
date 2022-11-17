@@ -30,6 +30,7 @@
 .sublist-item {
     list-style-type: none;
     padding-block: .5rem;
+    cursor: pointer;
 }
 .page-item.active .page-link {
     background-color: red;

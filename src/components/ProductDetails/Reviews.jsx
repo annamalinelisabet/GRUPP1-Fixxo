@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Reviews = () => {
   return (
-    <div>
+    <div className='text-start'>
       <div>
         <div>
           <h5>Diane</h5>

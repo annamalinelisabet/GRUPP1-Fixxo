@@ -19,7 +19,7 @@ const Inspiration = () => {
             <div className="new-sale container text-center m-b">
               <h4 className='e-white'>Pamela Reif's Top Picks</h4>
               {/* <h4 className='h4-w'>Top Picks</h4> */}
-              <Link to="/"><button className='btn-news'>SHOP NOW</button></Link>
+              <Link to="/products"><button className='btn-news'>SHOP NOW</button></Link>
             </div>
         </div>
       </div>
@@ -27,7 +27,7 @@ const Inspiration = () => {
         <div className=" h-100 d-flex justify-content-center align-items-center justify-content-around"> 
               <div className="new-arrivals container text-center m-b">
                 <h4>Let's Be Conscious</h4>
-                <Link to="/"><button className='btn-inspo'>SHOP NOW</button></Link>
+                <Link to="/products"><button className='btn-inspo'>SHOP NOW</button></Link>
               </div>
               <div className="img d-none d-sm-none d-lg-block mt-lg-1">
                 <img className='' src={man} height={250} alt="man shopping" />

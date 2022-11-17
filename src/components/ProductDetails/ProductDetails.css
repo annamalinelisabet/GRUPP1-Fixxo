@@ -8,10 +8,7 @@
 
 .d-text {
   color: #616365;
-}
-
-.d-text-active {
-  color: #FF7373;
+  cursor: pointer;
 }
 
 .d-color {

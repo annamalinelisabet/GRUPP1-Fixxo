@@ -9,7 +9,6 @@ export const getProducts = () => {
 
         try {
             const res = await axios.get('https://fixxobackend.azurewebsites.net/api/products')
-            console.log(res.data)
             if(res.status === 200) {
                 dispatch(getProductsSuccess(res.data))
             } else {
